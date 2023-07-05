@@ -82,7 +82,7 @@ namespace PRN211_GroupProject
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
-            previous.Hide();
+            previous.Show();
         }
 
         private void lboxSongs_Click(object sender, EventArgs e)

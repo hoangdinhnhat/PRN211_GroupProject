@@ -23,10 +23,10 @@ namespace PRN211_GroupProject
         private List<PlayList> playlists;
         private int curSong = 0;
  
-        public AllSong()
+        public AllSong(Form previous)
         {
             InitializeComponent();
-            //this.previous = previous;
+            this.previous = previous;
             songService = SongService.gI();
             playListService = PlayListService.gI();
             playListSongService = PlayListSongService.gI();
