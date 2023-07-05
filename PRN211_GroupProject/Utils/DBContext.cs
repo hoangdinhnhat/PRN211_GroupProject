@@ -10,7 +10,7 @@ namespace PRN211_GroupProject.Utils
     public class DBContext
     {
         private static DBContext instance;
-        private string connectionString = "Data Source=DEVDD\\SQLEXPRESS;Initial Catalog=PRN211_GroupProject;User ID=sa;Password=12345;";
+        private string connectionString = "Data Source=localhost;Initial Catalog=PRN211_GroupProject;User ID=sa;Password=12345;";
         private SqlConnection connection;
 
         private DBContext()

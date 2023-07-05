@@ -56,6 +56,7 @@ namespace PRN211_GroupProject
             lboxSongs.DataSource = strings;
 
             lbPlayListNameValue.Text = playList.name;
+            lbDesValue.Text = playList.description;
             lbCreatedAtValue.Text = playList.createdAt.ToString();
 
             lbSongNameValue.Text = songs[currentSongIndex].name;
@@ -88,7 +89,11 @@ namespace PRN211_GroupProject
         private void lboxSongs_Click(object sender, EventArgs e)
         {
             int index = lboxSongs.SelectedIndex;
-            wpPlayer.currentPlaylist.moveItem(currentSongIndex, index);
+            while (currentSongIndex != index)
+            {
+                wpPlayer.Ctlcontrols.next();
+                updateSong();
+            }
         }
     }
 }

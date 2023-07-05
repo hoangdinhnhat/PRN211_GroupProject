@@ -45,6 +45,8 @@
             this.lbSinger = new System.Windows.Forms.Label();
             this.lbSongName = new System.Windows.Forms.Label();
             this.lbPlayingSong = new System.Windows.Forms.Label();
+            this.lbDesValue = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.wpPlayer)).BeginInit();
             this.pnlPlayList.SuspendLayout();
             this.pnl.SuspendLayout();
@@ -74,6 +76,8 @@
             // pnlPlayList
             // 
             this.pnlPlayList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPlayList.Controls.Add(this.lbDesValue);
+            this.pnlPlayList.Controls.Add(this.label2);
             this.pnlPlayList.Controls.Add(this.lbCreatedAtValue);
             this.pnlPlayList.Controls.Add(this.lbPlayListNameValue);
             this.pnlPlayList.Controls.Add(this.lbListSong);
@@ -89,7 +93,7 @@
             // lbCreatedAtValue
             // 
             this.lbCreatedAtValue.AutoSize = true;
-            this.lbCreatedAtValue.Location = new System.Drawing.Point(72, 83);
+            this.lbCreatedAtValue.Location = new System.Drawing.Point(72, 133);
             this.lbCreatedAtValue.Name = "lbCreatedAtValue";
             this.lbCreatedAtValue.Size = new System.Drawing.Size(16, 13);
             this.lbCreatedAtValue.TabIndex = 6;
@@ -97,16 +101,16 @@
             // 
             // lbPlayListNameValue
             // 
-            this.lbPlayListNameValue.Location = new System.Drawing.Point(50, 43);
+            this.lbPlayListNameValue.Location = new System.Drawing.Point(81, 43);
             this.lbPlayListNameValue.Name = "lbPlayListNameValue";
-            this.lbPlayListNameValue.Size = new System.Drawing.Size(140, 40);
+            this.lbPlayListNameValue.Size = new System.Drawing.Size(109, 40);
             this.lbPlayListNameValue.TabIndex = 5;
             this.lbPlayListNameValue.Text = "...";
             // 
             // lbListSong
             // 
             this.lbListSong.AutoSize = true;
-            this.lbListSong.Location = new System.Drawing.Point(12, 96);
+            this.lbListSong.Location = new System.Drawing.Point(12, 146);
             this.lbListSong.Name = "lbListSong";
             this.lbListSong.Size = new System.Drawing.Size(54, 13);
             this.lbListSong.TabIndex = 4;
@@ -115,16 +119,16 @@
             // lboxSongs
             // 
             this.lboxSongs.FormattingEnabled = true;
-            this.lboxSongs.Location = new System.Drawing.Point(12, 112);
+            this.lboxSongs.Location = new System.Drawing.Point(12, 164);
             this.lboxSongs.Name = "lboxSongs";
-            this.lboxSongs.Size = new System.Drawing.Size(178, 147);
+            this.lboxSongs.Size = new System.Drawing.Size(178, 95);
             this.lboxSongs.TabIndex = 3;
             this.lboxSongs.Click += new System.EventHandler(this.lboxSongs_Click);
             // 
             // lbPlayListCreatedAt
             // 
             this.lbPlayListCreatedAt.AutoSize = true;
-            this.lbPlayListCreatedAt.Location = new System.Drawing.Point(12, 83);
+            this.lbPlayListCreatedAt.Location = new System.Drawing.Point(12, 133);
             this.lbPlayListCreatedAt.Name = "lbPlayListCreatedAt";
             this.lbPlayListCreatedAt.Size = new System.Drawing.Size(60, 13);
             this.lbPlayListCreatedAt.TabIndex = 2;
@@ -207,6 +211,23 @@
             this.lbPlayingSong.TabIndex = 1;
             this.lbPlayingSong.Text = "PLAYING SONG";
             // 
+            // lbDesValue
+            // 
+            this.lbDesValue.Location = new System.Drawing.Point(79, 82);
+            this.lbDesValue.Name = "lbDesValue";
+            this.lbDesValue.Size = new System.Drawing.Size(111, 40);
+            this.lbDesValue.TabIndex = 8;
+            this.lbDesValue.Text = "...";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Description:";
+            // 
             // PlayListPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,5 +267,7 @@
         private System.Windows.Forms.Label lbSingerValue;
         private System.Windows.Forms.Label lbSongNameValue;
         private System.Windows.Forms.Label lbSinger;
+        private System.Windows.Forms.Label lbDesValue;
+        private System.Windows.Forms.Label label2;
     }
 }

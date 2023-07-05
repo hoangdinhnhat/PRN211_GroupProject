@@ -30,7 +30,6 @@ namespace PRN211_GroupProject
             _playlistSong = PlayListSongService.gI();
             _song = SongService.gI();
             reload();
-
         }
 
         public void reload()
@@ -58,6 +57,7 @@ namespace PRN211_GroupProject
         private void dgvPlaylist_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int rowIndex = e.RowIndex;
+            if (rowIndex >= playlists.Count) return;
             playlist = playlists[rowIndex];
 
             lbShowName.Text = playlist.name;

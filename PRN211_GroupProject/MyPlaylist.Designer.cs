@@ -72,7 +72,7 @@
             // dgvPlaylist
             // 
             this.dgvPlaylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPlaylist.Location = new System.Drawing.Point(11, 42);
+            this.dgvPlaylist.Location = new System.Drawing.Point(12, 42);
             this.dgvPlaylist.Name = "dgvPlaylist";
             this.dgvPlaylist.Size = new System.Drawing.Size(451, 580);
             this.dgvPlaylist.TabIndex = 2;
@@ -80,7 +80,8 @@
             // 
             // pInfo
             // 
-            this.pInfo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pInfo.BackColor = System.Drawing.SystemColors.Control;
+            this.pInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pInfo.Controls.Add(this.lbShowNumber);
             this.pInfo.Controls.Add(this.lbShowCreate);
             this.pInfo.Controls.Add(this.lbShowName);
@@ -235,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 661);
+            this.ClientSize = new System.Drawing.Size(901, 664);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pInfo);
             this.Controls.Add(this.dgvPlaylist);
