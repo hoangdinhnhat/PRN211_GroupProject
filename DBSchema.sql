@@ -60,7 +60,3 @@ INSERT INTO PlayList_Song VALUES (1, 5);
 INSERT INTO PlayList_Song VALUES (2, 3);
 INSERT INTO PlayList_Song VALUES (2, 4);
 INSERT INTO PlayList_Song VALUES (2, 6);
-
-delete from PlayList_Song where play_list_id = 2 AND song_id = 1
-delete from Song where id = 7
-select * from Song
