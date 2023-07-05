@@ -156,7 +156,9 @@ namespace PRN211_GroupProject
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-
+            PlayListPlayer playListPlayer = new PlayListPlayer(this, playlist);
+            this.Hide();
+            playListPlayer.Show();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
