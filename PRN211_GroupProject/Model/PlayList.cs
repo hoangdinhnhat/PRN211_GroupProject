@@ -10,7 +10,8 @@ namespace PRN211_GroupProject.Model
     {
         public PlayList() { }
 
-        public PlayList(int id, string name, DateTime createdAt, string description) {
+        public PlayList(int id, string name, DateTime createdAt, string description)
+        {
             this.id = id;
             this.name = name;
             this.createdAt = createdAt;
@@ -21,5 +22,6 @@ namespace PRN211_GroupProject.Model
         public string name { get; set; }
         public DateTime createdAt { get; set; }
         public string description { get; set; }
+        public string username { get; set; }
     }
 }

@@ -37,6 +37,11 @@ namespace PRN211_GroupProject.Service
             return repository.findById(id);
         }
 
+        public List<PlayList> getByUser(string username)
+        {
+            return repository.findByUser(username);
+        }
+
         public PlayList save(PlayList playList)
         {
             return repository.save(playList);

@@ -23,6 +23,5 @@ namespace PRN211_GroupProject.Model
         public bool gender { get; set; }
 
         public DateTime createdAt { get; set; }
-
     }
 }

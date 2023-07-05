@@ -10,7 +10,8 @@ namespace PRN211_GroupProject.Model
     {
         public Song() { }
 
-        public Song(int id, string name, string singer, int YOP, string path) {
+        public Song(int id, string name, string singer, int YOP, string path)
+        {
             this.id = id;
             this.name = name;
             this.singer = singer;

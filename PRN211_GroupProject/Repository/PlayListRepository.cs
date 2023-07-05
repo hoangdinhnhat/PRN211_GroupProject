@@ -18,8 +18,9 @@ namespace PRN211_GroupProject.Repository
         private string INSERT_SQL = "INSERT INTO PlayList (name, createdAt, description) VALUES (N'{0}', '{1}', N'{2}')";
         private string UPDATE_SQL = "UPDATE PlayList SET name = N'{0}', createdAt = '{1}', description = N'{2}' WHERE id = {4}";
         private string SELECT_ALL_SQL = "SELECT * FROM PlayList";
-        private string SELECT_SQL = "SELECT * FROM PlayList WHERE id = {1}";
-        private string DELETE_SQL = "DELETE FROM PlayList WHERE id = {1}";
+        private string SELECT_SQL = "SELECT * FROM PlayList WHERE id = {0}";
+        private string SELECT_SQL_BY_USER = "SELECT * FROM PlayList WHERE username = '{0}'";
+        private string DELETE_SQL = "DELETE FROM PlayList WHERE id = {0}";
 
 
         private PlayListRepository()
@@ -52,6 +53,7 @@ namespace PRN211_GroupProject.Repository
                         string name = reader.GetString(1);
                         DateTime createdAt = reader.GetDateTime(2);
                         string description = reader.GetString(3);
+                        string username = reader.GetString(4);
 
                         PlayList playList = new PlayList(id, name, createdAt, description);
                         list.Add(playList);
@@ -82,6 +84,7 @@ namespace PRN211_GroupProject.Repository
                         string name = reader.GetString(1);
                         DateTime createdAt = reader.GetDateTime(2);
                         string description = reader.GetString(3);
+                        string username = reader.GetString(4);
 
                         playList = new PlayList(id, name, createdAt, description);
                     }
@@ -93,6 +96,36 @@ namespace PRN211_GroupProject.Repository
             }
             finally { connection.Close(); }
             return playList;
+        }
+
+        public List<PlayList> findByUser(string username)
+        {
+            string SQL = string.Format(SELECT_SQL_BY_USER, username);
+            List<PlayList> list = new List<PlayList>();
+            try
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(SQL, connection);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int id = reader.GetInt32(0);
+                        string name = reader.GetString(1);
+                        DateTime createdAt = reader.GetDateTime(2);
+                        string description = reader.GetString(3);
+
+                        PlayList playList = new PlayList(id, name, createdAt, description);
+                        list.Add(playList);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally { connection.Close(); }
+            return list;
         }
 
         public PlayList save(PlayList playList)

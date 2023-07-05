@@ -10,7 +10,8 @@ namespace PRN211_GroupProject.Model
     {
         public PlayListSong() { }
 
-        public PlayListSong(int play_list_id, int song_id) {
+        public PlayListSong(int play_list_id, int song_id)
+        {
             this.play_list_id = play_list_id;
             this.song_id = song_id;
         }

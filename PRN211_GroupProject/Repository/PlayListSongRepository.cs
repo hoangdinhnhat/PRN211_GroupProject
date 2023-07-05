@@ -17,6 +17,7 @@ namespace PRN211_GroupProject.Repository
         private string DELETE_SQL = "DELETE FROM PlayList_Song WHERE play_list_id = {0} AND song_id = {1}";
         private string SELECT_ALL_SQL = "SELECT * FROM PlayList_Song";
         private string SELECT_SQL_BY_PLID = "SELECT * FROM PlayList_Song WHERE play_list_id = {0}";
+        private string SELECT_SQL_BY_SID = "SELECT * FROM PlayList_Song WHERE song_id = {0}";
         private string SELECT_SQL = "SELECT * FROM PlayList_Song WHERE play_list_id = {0} AND song_id = {1}";
 
 
@@ -46,11 +47,11 @@ namespace PRN211_GroupProject.Repository
                 {
                     while (reader.Read())
                     {
-                        int playListId = reader.GetInt32(1);
-                        int songId = reader.GetInt32(2);
+                        int playListId = reader.GetInt32(0);
+                        int songId = reader.GetInt32(1);
 
-                        PlayListSong song = new PlayListSong(playListId, songId);
-                        list.Add(song);
+                        PlayListSong pls = new PlayListSong(playListId, songId);
+                        list.Add(pls);
                     }
                 }
             }
@@ -74,8 +75,36 @@ namespace PRN211_GroupProject.Repository
                 {
                     while (reader.Read())
                     {
-                        int playListId = reader.GetInt32(1);
-                        int songId = reader.GetInt32(2);
+                        int playListId = reader.GetInt32(0);
+                        int songId = reader.GetInt32(1);
+
+                        PlayListSong playListSong = new PlayListSong(playListId, songId);
+                        list.Add(playListSong);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally { connection.Close(); }
+            return list;
+        }
+
+        public List<PlayListSong> findBySongId(int id)
+        {
+            string SQL = string.Format(SELECT_SQL_BY_SID, id);
+            List<PlayListSong> list = new List<PlayListSong>();
+            try
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(SQL, connection);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int playListId = reader.GetInt32(0);
+                        int songId = reader.GetInt32(1);
 
                         PlayListSong playListSong = new PlayListSong(playListId, songId);
                         list.Add(playListSong);
@@ -102,8 +131,8 @@ namespace PRN211_GroupProject.Repository
                 {
                     if (reader.Read())
                     {
-                        int playListId = reader.GetInt32(1);
-                        int songId = reader.GetInt32(2);
+                        int playListId = reader.GetInt32(0);
+                        int songId = reader.GetInt32(1);
 
                         playListSong = new PlayListSong(playListId, songId);
                     }

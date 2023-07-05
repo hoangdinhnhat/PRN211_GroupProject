@@ -46,10 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\PlayList.cs" />
     <Compile Include="Model\PlayListSong.cs" />
     <Compile Include="Model\Song.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="PlayListPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayListPlayer.Designer.cs">
+      <DependentUpon>PlayListPlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repository\SongRepository.cs" />
     <Compile Include="Repository\PlayListRepository.cs" />
     <Compile Include="Repository\PlayListSongRepository.cs" />
@@ -58,17 +70,20 @@
     <Compile Include="Service\PlayListSongService.cs" />
     <Compile Include="Service\SongService.cs" />
     <Compile Include="Service\UserService.cs" />
-    <Compile Include="Utils\DBContext.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="SongPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SongPlayer.Designer.cs">
+      <DependentUpon>SongPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\DBContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayListPlayer.resx">
+      <DependentUpon>PlayListPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,6 +94,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SongPlayer.resx">
+      <DependentUpon>SongPlayer.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
