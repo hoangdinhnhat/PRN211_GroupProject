@@ -15,7 +15,7 @@ namespace PRN211_GroupProject.Repository
 
         private static PlayListRepository instance;
         private SqlConnection connection;
-        private string INSERT_SQL = "INSERT INTO PlayList (name, createdAt, description) VALUES (N'{0}', '{1}', N'{2}')";
+        private string INSERT_SQL = "INSERT INTO PlayList (name, createdAt, description, username) VALUES (N'{0}', '{1}', N'{2}', '{3}')";
         private string UPDATE_SQL = "UPDATE PlayList SET name = N'{0}', createdAt = '{1}', description = N'{2}' WHERE id = {4}";
         private string SELECT_ALL_SQL = "SELECT * FROM PlayList";
         private string SELECT_SQL = "SELECT * FROM PlayList WHERE id = {0}";
@@ -130,7 +130,7 @@ namespace PRN211_GroupProject.Repository
 
         public PlayList save(PlayList playList)
         {
-            string SQL = string.Format(INSERT_SQL, playList.name, playList.createdAt, playList.description);
+            string SQL = string.Format(INSERT_SQL, playList.name, playList.createdAt, playList.description, playList.username);
             try
             {
                 connection.Open();

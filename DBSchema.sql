@@ -53,3 +53,5 @@ INSERT INTO Song (name, singer, YOP, path) VALUES (N'Đâu ai cần', 'Wxrdie', 
 
 INSERT INTO PlayList (name, createdAt, description, username) VALUES (N'PlayList nghe vào những ngày mưa', '2023-07-04', N'Nếu lúc đó em không buông tay, Nếu lúc đó anh không lung lay', 'hdnqt');
 INSERT INTO PlayList (name, createdAt, description, username) VALUES (N'PlayList động lực', '2023-07-04', N'Tất cả chúng mày đều bị điên hết rồi, tất cả kịch bản đã được biên hết rồi', 'hdnqt');
+INSERT INTO PlayList (name, createdAt, description, username) VALUES (N'PlayList sad songs', '2023-07-05', N'I love you 3000', 'hdnqt');
+INSERT INTO PlayList (name, createdAt, description, username) VALUES (N'PlayList lofi chill', '2023-07-05', N'Tiếng chó sủa lofi nghê cực ấm', 'hdnqt');
