@@ -42,6 +42,11 @@ namespace PRN211_GroupProject.Service
             return repository.findByPlayListId(play_list_id);
         }
 
+        public List<PlayListSong> getBySongId(int song_id)
+        {
+            return repository.findBySongId(song_id);
+        }
+
         public PlayListSong save(PlayListSong playListSong)
         {
             return repository.save(playListSong);

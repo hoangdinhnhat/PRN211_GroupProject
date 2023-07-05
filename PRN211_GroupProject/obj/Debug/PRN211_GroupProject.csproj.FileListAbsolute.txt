@@ -27,6 +27,11 @@ D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.pdb
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Login.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.PlayListPlayer.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.SongPlayer.resources
+<<<<<<< HEAD
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.MyPlaylist.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.CreatePlaylist.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.UserProfile.resources
+=======
+D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.AllSong.resources
+D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.UploadSong.resources
+>>>>>>> 036f6e325e469a2e4287263399c8e7a2122e6c61
