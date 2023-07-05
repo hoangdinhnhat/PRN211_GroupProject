@@ -17,7 +17,7 @@ namespace PRN211_GroupProject.Repository
         private string INSERT_SQL = "INSERT INTO Users VALUES ('{0}', '{1}', N'{2}', {3}, '{4}')";
         private string UPDATE_SQL = "UPDATE Users SET password = '{0}', fullName = '{1}', gender = {2}, createdAt = '{3}' WHERE username = '{4}'";
         private string SELECT_ALL_SQL = "SELECT * FROM Users";
-        private string SELECT_SQL = "SELECT * FROM Users WHERE username = '{1}'";
+        private string SELECT_SQL = "SELECT * FROM Users WHERE username = '{0}'";
 
 
         private UserRepository() {

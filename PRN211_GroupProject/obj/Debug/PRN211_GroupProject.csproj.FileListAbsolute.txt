@@ -21,3 +21,27 @@ D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.CoreCompileInputs.cache
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.exe
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.pdb
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\bin\Debug\PRN211_GroupProject.exe.config
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\bin\Debug\PRN211_GroupProject.exe
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\bin\Debug\PRN211_GroupProject.pdb
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\bin\Debug\Interop.WMPLib.dll
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\bin\Debug\AxInterop.WMPLib.dll
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.AssemblyReference.cache
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.SuggestedBindingRedirects.cache
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\Interop.WMPLib.dll
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\AxInterop.WMPLib.dll
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.ResolveComReference.cache
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.CreatePlaylist.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.AllSong.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Homepage.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Login.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.MyPlaylist.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.PlayListPlayer.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Properties.Resources.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.SongPlayer.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.UserProfile.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.UploadSong.resources
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.GenerateResource.cache
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.CoreCompileInputs.cache
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.exe
+E:\Linh Nhi FPT\Sem 5 - 2023\PRN211\clone\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.pdb
