@@ -27,3 +27,5 @@ D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.pdb
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Login.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.PlayListPlayer.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.SongPlayer.resources
+D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.AllSong.resources
+D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.UploadSong.resources

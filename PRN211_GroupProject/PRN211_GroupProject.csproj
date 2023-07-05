@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllSong.Designer.cs">
+      <DependentUpon>AllSong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,9 +82,18 @@
     <Compile Include="SongPlayer.Designer.cs">
       <DependentUpon>SongPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="UploadSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadSong.Designer.cs">
+      <DependentUpon>UploadSong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\DBContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllSong.resx">
+      <DependentUpon>AllSong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +111,9 @@
     </Compile>
     <EmbeddedResource Include="SongPlayer.resx">
       <DependentUpon>SongPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadSong.resx">
+      <DependentUpon>UploadSong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

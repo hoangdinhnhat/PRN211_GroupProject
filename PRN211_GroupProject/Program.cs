@@ -16,7 +16,7 @@ namespace PRN211_GroupProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PlayListPlayer());
+            Application.Run(new AllSong());
         }
     }
 }
