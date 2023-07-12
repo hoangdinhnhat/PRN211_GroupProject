@@ -87,6 +87,12 @@
     <Compile Include="PlayListPlayer.Designer.cs">
       <DependentUpon>PlayListPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repository\SongRepository.cs" />
     <Compile Include="Repository\PlayListRepository.cs" />
     <Compile Include="Repository\PlayListSongRepository.cs" />
@@ -143,6 +149,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SongPlayer.resx">
       <DependentUpon>SongPlayer.cs</DependentUpon>
     </EmbeddedResource>

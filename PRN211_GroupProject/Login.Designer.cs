@@ -106,6 +106,7 @@
             this.lklbRegister.TabIndex = 6;
             this.lklbRegister.TabStop = true;
             this.lklbRegister.Text = "Don\'t have account ? Register now";
+            this.lklbRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklbRegister_LinkClicked);
             // 
             // Login
             // 

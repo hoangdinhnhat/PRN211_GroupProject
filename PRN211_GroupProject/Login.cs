@@ -50,5 +50,12 @@ namespace PRN211_GroupProject
                 }
             }
         }
+
+        private void lklbRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registration registration = new Registration();
+            registration.Show();
+            this.Hide();
+        }
     }
 }

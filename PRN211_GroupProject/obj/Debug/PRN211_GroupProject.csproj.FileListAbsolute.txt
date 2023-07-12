@@ -22,3 +22,4 @@ D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.CoreCompileInputs.cache
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.exe
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.pdb
+D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Registration.resources

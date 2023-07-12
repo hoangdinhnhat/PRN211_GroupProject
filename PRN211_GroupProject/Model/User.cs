@@ -8,6 +8,9 @@ namespace PRN211_GroupProject.Model
 {
     public class User
     {
+
+        public User() { }
+
         public User(string username, string password, string fullName, bool gender, DateTime createdAt)
         {
             this.username = username;

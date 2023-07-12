@@ -1,4 +1,5 @@
-﻿using PRN211_GroupProject.Model;
+﻿using PRN211_GroupProject.Context;
+using PRN211_GroupProject.Model;
 using PRN211_GroupProject.Service;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace PRN211_GroupProject
         private SongService songService;
         private PlayListService playListService;
         private PlayListSongService playListSongService;
+        private User user;
 
         private List<Song> songs;
         private List<PlayList> playlists;
@@ -30,7 +32,7 @@ namespace PRN211_GroupProject
             songService = SongService.gI();
             playListService = PlayListService.gI();
             playListSongService = PlayListSongService.gI();
-
+            user = AuthenticationContext.gI().getUser();
             songs = songService.getALlSong();
         }
 
@@ -65,7 +67,7 @@ namespace PRN211_GroupProject
             {
                 plId.Add(p.play_list_id);
             }
-            playlists = playListService.getAllPlayList()
+            playlists = playListService.getByUser(user.username)
                 .Where(p => plId
                 .IndexOf(p.id) == -1)
                 .ToList();

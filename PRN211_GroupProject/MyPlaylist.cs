@@ -1,4 +1,5 @@
-﻿using PRN211_GroupProject.Model;
+﻿using PRN211_GroupProject.Context;
+using PRN211_GroupProject.Model;
 using PRN211_GroupProject.Service;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace PRN211_GroupProject
         PlayListService _playlist;
         PlayListSongService _playlistSong;
         SongService _song;
+        private User user;
 
         private List<PlayList> playlists;
 
@@ -30,13 +32,14 @@ namespace PRN211_GroupProject
             _playlist = PlayListService.gI();
             _playlistSong = PlayListSongService.gI();
             _song = SongService.gI();
+            user = AuthenticationContext.gI().getUser();
             reload();
             this.previous = previous;
         }
 
         public void reload()
         {
-            playlists = _playlist.getAllPlayList();
+            playlists = _playlist.getByUser(user.username);
             if (playlists.Count > 0) playlist = playlists[0];
 
             dgvPlaylist.Columns.Add("ID", "ID");
