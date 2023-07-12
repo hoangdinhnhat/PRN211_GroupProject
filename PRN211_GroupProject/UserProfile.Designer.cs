@@ -38,7 +38,7 @@
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbUsertxt = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbProfile
@@ -82,6 +82,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(120, 222);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(265, 20);
             this.txtPassword.TabIndex = 4;
             // 
@@ -101,9 +102,9 @@
             this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.Location = new System.Drawing.Point(117, 87);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(46, 18);
+            this.lbDate.Size = new System.Drawing.Size(20, 18);
             this.lbDate.TabIndex = 6;
-            this.lbDate.Text = "label1";
+            this.lbDate.Text = "...";
             // 
             // lbUsername
             // 
@@ -121,9 +122,9 @@
             this.lbUsertxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsertxt.Location = new System.Drawing.Point(120, 130);
             this.lbUsertxt.Name = "lbUsertxt";
-            this.lbUsertxt.Size = new System.Drawing.Size(46, 18);
+            this.lbUsertxt.Size = new System.Drawing.Size(20, 18);
             this.lbUsertxt.TabIndex = 8;
-            this.lbUsertxt.Text = "label1";
+            this.lbUsertxt.Text = "...";
             // 
             // btnCancel
             // 
@@ -135,23 +136,25 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(302, 431);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 33);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(302, 431);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(83, 33);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // UserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 491);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbUsertxt);
             this.Controls.Add(this.lbUsername);
@@ -164,6 +167,7 @@
             this.Controls.Add(this.lbProfile);
             this.Name = "UserProfile";
             this.Text = "UserProfile";
+            this.Load += new System.EventHandler(this.UserProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,6 +185,6 @@
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.Label lbUsertxt;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

@@ -14,6 +14,7 @@ namespace PRN211_GroupProject
 {
     public partial class MyPlaylist : Form
     {
+        private Form previous;
         PlayListService _playlist;
         PlayListSongService _playlistSong;
         SongService _song;
@@ -23,13 +24,14 @@ namespace PRN211_GroupProject
         private PlayList playlist;
         private List<Song> songs;
 
-        public MyPlaylist()
+        public MyPlaylist(Form previous)
         {
             InitializeComponent();
             _playlist = PlayListService.gI();
             _playlistSong = PlayListSongService.gI();
             _song = SongService.gI();
             reload();
+            this.previous = previous;
         }
 
         public void reload()
@@ -163,7 +165,8 @@ namespace PRN211_GroupProject
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            previous.Show();
         }
 
 

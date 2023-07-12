@@ -89,7 +89,7 @@
             // btnCreate
             // 
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(197, 363);
+            this.btnCreate.Location = new System.Drawing.Point(276, 354);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(113, 33);
             this.btnCreate.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btnCancel.Location = new System.Drawing.Point(316, 363);
+            this.btnCancel.Location = new System.Drawing.Point(409, 354);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(95, 33);
             this.btnCancel.TabIndex = 6;

@@ -10,6 +10,7 @@ D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\AxInterop.WMPLib.dll
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.csproj.ResolveComReference.cache
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.CreatePlaylist.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.AllSong.resources
+D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Homepage.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.Login.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.MyPlaylist.resources
 D:\PRN211_GroupProject\PRN211_GroupProject\obj\Debug\PRN211_GroupProject.PlayListPlayer.resources

@@ -14,11 +14,13 @@ namespace PRN211_GroupProject
 {
     public partial class CreatePlaylist : Form
     {
+        private Form previous;
         PlayListService _playList;
-        public CreatePlaylist()
+        public CreatePlaylist(Form previous)
         {
             InitializeComponent();
             _playList = PlayListService.gI();
+            this.previous = previous;
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
@@ -41,7 +43,7 @@ namespace PRN211_GroupProject
             {
                 _playList.save(newPlaylist);
                 this.Hide();
-                var showPlayList = new MyPlaylist();
+                var showPlayList = new MyPlaylist(this);
                 showPlayList.Show();
             }
 
@@ -49,7 +51,8 @@ namespace PRN211_GroupProject
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            previous.Show();
         }
     }
 }
